@@ -1,0 +1,25 @@
+using namespace std;
+
+int main() {
+  //Given data. Using double to display decimal numbers with a fix cost
+for meal, tax, tip
+  double mealCost{ 88.76 };
+  double tax{ 6.75 };
+  double tip{ 20 };
+  
+  cout << "Thank you for eating at\n Opera Software International
+Cafe&Restaurant\n 1875 S Grant St, San Mateo, CA 94402\n"
+      << "\nYour Receipt \n\n";
+  cout << "Meal Cost: " << mealCost;
+  double totalTax = (tax / 100) * mealCost;
+  
+  cout << "\nTax amount: " << totalTax;
+  double totalTip = (tip / 100) * (mealCost + totalTax);
+  
+  cout << "\nTip: " << totalTip;
+  double totalAmountDue = mealCost + totalTax + totalTip;
+  
+  cout << "\nTotal Bill: " << totalAmountDue << endl;
+  
+  return 0;
+}
